@@ -1,0 +1,35 @@
+# even series in shell script
+clear
+echo "------EVEN SERIES------"
+echo -n "Enter a number: "
+checker=0
+read num
+while test $checker -le $num
+do
+ii=`expr $checker % 2`
+        if test $ii -ne 0
+        then
+                echo "$checker"
+        fi
+checker=`expr $checker + 1`
+done
+
+
+
+Output
+--------
+
+
+------ODD SERIES------
+Enter a number: 20
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+
