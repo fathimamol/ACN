@@ -1,0 +1,84 @@
+echo "Enter Two Numbers"
+read a b
+echo "What do you want to do? (1 to 5)"
+echo "1) Sum"
+echo "2) Difference"
+echo "3) Product"
+echo "4) Quotient"
+echo "5) Remainder"
+echo "Enter your Choice"
+read n
+case "$n" in
+1) echo "The Sum of $a and $b is `expr $a + $b`";;
+2) echo "The Difference between $a and $b is `expr $a - $b`";;
+3) echo "The Product of the $a and $b is `expr $a \* $b`";;
+4) echo "The Quotient of $a by $b is `expr $a / $b`";;
+5) echo "The Remainder of $a by $b is `expr $a % $b`";;
+esac
+
+
+Output
+--------
+
+
+Enter Two Numbers
+4 8
+What do you want to do? (1 to 5)
+1) Sum
+2) Difference
+3) Product
+4) Quotient
+5) Remainder
+Enter your Choice
+1
+The Sum of 4 and 8 is 12
+ 
+Enter Two Numbers
+8 5
+What do you want to do? (1 to 5)
+1) Sum
+2) Difference
+3) Product
+4) Quotient
+5) Remainder
+Enter your Choice
+2
+The Difference between 8 and 5 is 3
+
+Enter Two Numbers
+25 5
+What do you want to do? (1 to 5)
+1) Sum
+2) Difference
+3) Product
+4) Quotient
+5) Remainder
+Enter your Choice
+3
+The Product of the 25 and 5 is 125
+
+Enter Two Numbers
+30 5
+What do you want to do? (1 to 5)
+1) Sum
+2) Difference
+3) Product
+4) Quotient
+5) Remainder
+Enter your Choice
+4
+The Quotient of 30 by 5 is 6
+
+Enter Two Numbers
+20 10
+What do you want to do? (1 to 5)
+1) Sum
+2) Difference
+3) Product
+4) Quotient
+5) Remainder
+Enter your Choice
+5
+The Remainder of 20 by 10 is 0
+
+
